@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictor de Secuencias</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <header>
+        Predictor de Secuencias
+    </header>
+
+
+    <main class="contenedor">
+
+        <div class="grid">
+
+
+            <div class="Recuadro"> <!--Recuadro 1-->
+                <h1> Cadena de entrenamiento: </h1>
+                <p>01010010010001010100100101001001101000110010101010101111 <br> 010010010110100101101010100110101010101010001110011</p>
+                <p>Derecha probabilidad de 0, Izquierda probabilidad de 1</p>
+                <p> 000:  0, 3     <br>
+                    001: 10, 5    <br>
+                    010: 13, 18   <br>
+                    011:  5, 2    <br>
+                    100:  3, 12   <br>
+                    101: 20, 3    <br>
+                    110:  2, 5    <br>
+                    111:  2, 1    </p>
+                <h1>Ejemplo de cadena:</h1>
+                <p>0110001010100101</p>
+                <p>predictions: 0111010101101</p>
+                <p>mensaje: Computer guessed right 10 out of 13 symbols 76.92 %</p>
+
+            </div> <!--Div Fin Recuadro 1-->
+
+
+            <div class="Recuadro"> <!--Recuadro 2-->
+            <form id="sequence-form">
+                <label class="label" for="sequence-input">Ingrese una secuencia de ceros y unos: <br> <br> </label>
+                <input type="text" id="sequence-input" required>
+                <button type="submit">Realizar Predicción</button>
+                <div class="Resultados" id="result-section"></div>
+            </form>
+            </div> <!--Div  Fin Recuadro 2-->
+
+            
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        Todos los derechos reservados
+    </footer>
+
+    <script src="/js/scripts.js"></script>
+
+</body>
+</html>
+
+
